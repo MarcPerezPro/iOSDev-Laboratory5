@@ -20,9 +20,46 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EfT-ps-yqt">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jg3-Zj-IYR">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="100"/>
+                                                <state key="normal" title="&lt;"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfa-OZ-vdH">
+                                                <rect key="frame" x="35" y="0.0" width="30" height="100"/>
+                                                <state key="normal" title="&gt;"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nz-af-LXf">
+                                                <rect key="frame" x="70" y="0.0" width="30" height="100"/>
+                                                <state key="normal" title="⌂"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rWK-Wj-dT4">
+                                                <rect key="frame" x="105" y="0.0" width="250" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13b-SJ-0BP">
+                                                <rect key="frame" x="360" y="0.0" width="54" height="100"/>
+                                                <state key="normal" title="Go to ..."/>
+                                            </button>
+                                        </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-RV-Mcz">
                                         <rect key="frame" x="0.0" y="110" width="414" height="15"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Secure content: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqI-wg-otO">
+                                                <rect key="frame" x="0.0" y="0.0" width="378" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXe-01-jf1">
+                                                <rect key="frame" x="383" y="0.0" width="31" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                     </stackView>
                                     <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0h-hb-a0h">
                                         <rect key="frame" x="0.0" y="135" width="414" height="663"/>
