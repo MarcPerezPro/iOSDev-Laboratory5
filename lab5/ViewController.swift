@@ -12,6 +12,16 @@ import WebKit
 class ViewController: UIViewController, WKUIDelegate {
 
     @IBOutlet weak var webView: WKWebView!
+    @IBAction func goBackButton(_ sender: UIButton) {
+    }
+    @IBAction func goForwardButton(_ sender: UIButton) {
+    }
+    @IBAction func goHomeButton(_ sender: UIButton) {
+    }
+    @IBOutlet weak var searchBar: UITextField!
+    @IBAction func goToURLButton(_ sender: UIButton) {
+    }
+    @IBOutlet weak var contentSecureLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
