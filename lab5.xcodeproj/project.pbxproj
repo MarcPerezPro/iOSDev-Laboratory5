@@ -15,6 +15,7 @@
 		493C288B2449085A00985DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493C28892449085A00985DC4 /* LaunchScreen.storyboard */; };
 		493C28962449085A00985DC4 /* lab5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C28952449085A00985DC4 /* lab5Tests.swift */; };
 		493C28A12449085A00985DC4 /* lab5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C28A02449085A00985DC4 /* lab5UITests.swift */; };
+		493C28B0244911D300985DC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493C28AF244911D300985DC4 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		493C289C2449085A00985DC4 /* lab5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab5UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		493C28A02449085A00985DC4 /* lab5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab5UITests.swift; sourceTree = "<group>"; };
 		493C28A22449085A00985DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		493C28AF244911D300985DC4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493C28B0244911D300985DC4 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				493C28942449085A00985DC4 /* lab5Tests */,
 				493C289F2449085A00985DC4 /* lab5UITests */,
 				493C287C2449085400985DC4 /* Products */,
+				493C28AE244911D300985DC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +130,14 @@
 				493C28A22449085A00985DC4 /* Info.plist */,
 			);
 			path = lab5UITests;
+			sourceTree = "<group>";
+		};
+		493C28AE244911D300985DC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				493C28AF244911D300985DC4 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
