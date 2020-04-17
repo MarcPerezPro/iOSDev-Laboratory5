@@ -68,7 +68,7 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
         goToURL(urlString: "https://www.google.com")
     }
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    func printNavigator(_ webView: WKWebView) {
         let navigatorToJSON = """
         var _navigator = {};
         for (var i in navigator) _navigator[i] = navigator[i];
@@ -80,6 +80,20 @@ class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
                 print("navigator =", result!)
             }
         }
+    }
+    
+    func updateSecureContent(isSecure: Bool) {
+        contentSecureLabel.text = "Secure content: "
+        if (isSecure) {
+            contentSecureLabel.text! += "YES"
+        } else {
+            contentSecureLabel.text! += "NO"
+        }
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        printNavigator(webView)
+        updateSecureContent(isSecure: webView.hasOnlySecureContent)
     }
     
     override func viewDidLoad() {
