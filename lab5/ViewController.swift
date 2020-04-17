@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKUIDelegate {
+class ViewController: UIViewController, WKUIDelegate, WKNavigationDelegate {
     
     let ALERT_EMPTY_URL = "You must provide some URL to go!"
     let ALERT_INVALID_URL = "You must provide a valid URL to go!"
@@ -68,10 +68,25 @@ class ViewController: UIViewController, WKUIDelegate {
         goToURL(urlString: "https://www.google.com")
     }
     
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        let navigatorToJSON = """
+        var _navigator = {};
+        for (var i in navigator) _navigator[i] = navigator[i];
+        JSON.stringify(_navigator);
+        """
+        
+        webView.evaluateJavaScript(navigatorToJSON) { (result, error) in
+            if error == nil {
+                print("navigator =", result!)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         webView.uiDelegate = self
+        webView.navigationDelegate = self
         goHome()
     }
 }
